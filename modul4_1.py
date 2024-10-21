@@ -1,7 +1,6 @@
 import fake_math as fm
 import true_math as tm
 
-# Импорт функций из модулей fake_math и true_math
 fm_divide = fm.divide
 tm_divide = tm.divide
 
