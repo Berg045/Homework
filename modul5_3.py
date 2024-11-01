@@ -28,12 +28,12 @@ class House:
     def __gt__(self, other):
         if isinstance(other, int):
             return self.number_of_floors > other.number_of_floors
-        return False
+        return FNotImplemented
 
     def __ge__(self, other):
         if isinstance(other, int):
             return self.number_of_floors >= other.number_of_floors
-        return True
+        return NotImplemented
 
     def __lt__(self, other):
         if isinstance(other, int):
