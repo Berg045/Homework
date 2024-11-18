@@ -76,21 +76,13 @@ class Cube(Figure):
 
 circle1 = Circle((200, 200, 100), 10)
 cube1 = Cube((222, 35, 130), 6)
-
 circle1.set_color(55, 66, 77)
 print(circle1.get_color())
-
 cube1.set_color(300, 70, 15)
 print(cube1.get_color())
-
 cube1.set_sides(5, 3, 12, 4, 5)
-print(cube1.get_sides())  # [6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6]
-
-circle1.set_sides(15)  # Изменится
-print(circle1.get_sides())  # [15]
-
-# Проверка периметра (круга)
+print(cube1.get_sides()) 
+circle1.set_sides(15) 
+print(circle1.get_sides()) 
 print(len(circle1))  # 15
-
-# Проверка объёма (куба)
 print(cube1.get_volume())
