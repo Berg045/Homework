@@ -2,9 +2,9 @@ class StepValueError(ValueError):
     pass
 
 class Iterator:
-    def __init__(self, start, stop, step = 1):
+    def __init__(self, start, stop, step=1):
         if step == 0:
-            raise StepValueError('шаг не может быть равным 0')
+            raise StepValueError('шаг не может быть равен 0')
         self.start = start
         self.stop = stop
         self.step = step
@@ -21,12 +21,12 @@ class Iterator:
         self.pointer += self.step
         return current_value
 
-        try:
-            iter1 = Iterator(100, 200, 0)
-            for i in iter1:
-                print(i, end=' ')
-        except StepValueError:
-            print('Шаг указан неверно')
+try:
+    iter1 = Iterator(100, 200, 0)
+    for i in iter1:
+        print(i, end=' ')
+except StepValueError:
+    print('Шаг указан неверно')
 
 iter2 = Iterator(-5, 1)
 iter3 = Iterator(6, 15, 2)
