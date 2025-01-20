@@ -14,9 +14,6 @@ class Runner:
     def walk(self):
         self.distance += 5
 
-    # def __str__(self):
-    #     return self.name
-
 class RunnerTest(unittest.TestCase):
     def test_walk(self):
         runner = Runner("Alice")
